@@ -1,2 +1,2 @@
-# Projeto-Integrador-3
-CRUD referente ao projeto integrador do primeiro semestre de ADS
+# Social Pet
+Um site para cadastros de informações de animais de estimação.
