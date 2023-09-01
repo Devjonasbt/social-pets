@@ -1,10 +1,6 @@
 # Social Pet
 Um site para cadastros de informações de animais de estimação.
 
-## PARA CLONAR O REPOSITÓRIO POR SSH
+## COMO INICIAR
 
-1 - Abra seu git no repositório desejado
-
-2 - Digite: <strong>git clone git@github.com:DevNylo/social-pet.git</strong>
-
-3 - Quando for solicitada a SSH-KEY digite: <strong>socialpet3sem</strong>
+1 - FAÇA UM FORK DESSE REPOSITÓRIO, TODAS E QUALQUER ALTEREÇÃO PRECISAM SER ADICIONADAS ATRAVES DE PULL REQUESTS.
