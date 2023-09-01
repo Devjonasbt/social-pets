@@ -5,6 +5,6 @@ Um site para cadastros de informações de animais de estimação.
 
 1 - Abra seu git no repositório desejado
 
-2 - Digite "git clone git@github.com:DevNylo/social-pet.git" sem as áspas.
+2 - Digite git clone <strong>git@github.com:DevNylo/social-pet.git</strong>
 
 3 - Quando for solicitada a SSH-KEY digite <strong>socialpet3sem</strong>. 
