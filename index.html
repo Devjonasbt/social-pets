@@ -1,13 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!---->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---->
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Social-pet</title>
 </head>
 <body>
-    <h1>ola mundo</h1>
-    <h2>como esta voces?</h2>
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="checkbox">
+            <label class="btn" for="checkbox"><i id="ii" class="fa fa-bars"></i> <span>Menu</span></label>
+            
+            <div class="sidebar">
+                <ul>
+                    <a href="#"><li>Dashboard</li></a>
+                    <a href="#"><li>Widgets</li></a>
+                    <a href="#" class="active">Charts</li></a>
+                    <a href="#"><li>Front-End</li></a>
+                    <a href="#"><li>Email</li></a>
+                    <a href="#"><li>Forms</li></a>
+                    <a href="#"><li>UI Elements</li></a>
+                    <a href="#"><li>Pages</li></a>
+                    <a href="#"><li>Google Maps</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="title-pet">
+            <p>Social-pet</p>
+        </div>
+        <div class="login ">
+            <button class="but">Entar</button>
+            <button class="but" id="but1">Cadastro</button>
+            
+        </div>
+    
+    </header>
+    <main>
+        <div class="cont1">
+            <div>cont1</div>
+            <div>cont2</div>
+            <div>cont3</div>
+        </div>
+        <section  class="cont2" >
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, perspiciatis voluptate officia architecto quo amet reprehenderit, neque ipsam deserunt eaque animi laborum consequatur. Consequuntur dolor possimus laudantium, vel illum laboriosam!</p>
+                <img src="assets/dall-e-2.webp" alt="">
+            </div>
+        </section>
+          <section class="carrosel">
+            <div class="flex">
+                <div class="img-port" id="item1" data-aos="fade-right">
+                    <div class="swiffy-slider">
+                        <ul class="slider-container">
+                            <li><img src="assets/dall-e-2.webp" ></li>
+                            <li><img src="assets/img/tela2.png "></li>
+                            <li><img src="assets/img/tela3.png"></li>
+                            <li><img src="assets/img/tela4.png"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
+                    
+                        <div class="slider-indicators">
+                            <button class="active"></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="text-proj">
+                        <h2>
+                            Meu primeiro projeto
+                        </h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
+                        <div class="class-butt"><button type="button" >Ver mais</button></div>
+                    </div>
+                </div>
+                <div class="img-port" id="item2" data-aos="fade-right">
+                    <div class="swiffy-slider">
+                        <ul class="slider-container">
+                            <li><img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg"></li>
+                            <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900""></li>
+                            <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
+                    
+                        <div class="slider-indicators">
+                            <button class="active"></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="text-proj">
+                        <h2>
+                            Meu primeiro projeto
+                        </h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
+                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                    </div>
+                </div>
+                <div class="img-port" id="item3" data-aos="fade-right">
+                    <div class="swiffy-slider">
+                        <ul class="slider-container">
+                            <li><img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg"></li>
+                            <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900"></li>
+                            <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
+                    
+                        <div class="slider-indicators">
+                            <button class="active"></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="text-proj">
+                        <h2>
+                            Meu primeiro projeto
+                        </h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
+                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+          </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            Option:1
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 </body>
 </html>
