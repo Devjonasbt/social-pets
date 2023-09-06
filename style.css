@@ -32,8 +32,9 @@ header .title-pet{
     display: flex;
     text-shadow: #000 2px 1px 2px;
 }
-header .title-pet p{
-    font-size: 35px;
+header .title-pet img{
+    width: 300px;
+    
     
 }
 
@@ -202,19 +203,14 @@ left: 100%;
    
 }
 /*main*/
-main .cont1{
-    background-image:url(assets/dall-e-2.webp);
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+main .carousel{
+    margin-bottom: 50px;
 }
-main .cont1 div{
-    width: 300px;
-    height: 400px;
-    background-color: #BAB5BD;
-    margin: 10px;
+.carousel-item{
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+.carousel-item img{
+    height: 75vh;
 }
 main .cont2{
 display: flex;
@@ -334,5 +330,8 @@ main .cont2 img{
     .projetos-container{
         width: 98%;
         flex-wrap: wrap;
+    }
+    .carousel-item img{
+        height: 50vh;
     }
 }
