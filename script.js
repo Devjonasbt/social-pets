@@ -10,3 +10,4 @@ function carrossel(){
      box.style.transform = 'translateX(${-contador * 1250}px)';
 }
 setInterval(carrossel, 1800);
+Document.body.style.background='red'

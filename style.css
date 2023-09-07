@@ -13,9 +13,10 @@
 }
 :root {
     --main-bg-color: #247D9E;
+    --fundo:rgba(231, 240, 237, 0.644);
 }
 body{
-    background-color: rgba(231, 240, 237, 0.644);
+    background-color:rgba(189, 216, 207, 0.644);
 }
 header{
     position:relative;
