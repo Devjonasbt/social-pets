@@ -1,13 +1,11 @@
-const box = document.querySelector(".container");
-const img = document.querySelectorAll(".container img");
+function menuMobile(){
+    const activeMenu = document.querySelector('.fa-bars');
+    const navMenu = document.querySelector('header .navegacao-primaria');
+    
+    
+    activeMenu.addEventListener('click',()=>{
+        activeMenu.classList.toggle('fa-x');
+        navMenu.classList.toggle('ativado');
+    });
 
-let contador=0;
-function carrossel(){
-    contador++;
-    if(contador > img.length - 1){
-        idx = 0;
-    }
-     box.style.transform = 'translateX(${-contador * 1250}px)';
 }
-setInterval(carrossel, 1800);
-Document.body.style.background='red'

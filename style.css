@@ -21,9 +21,9 @@ body{
 header{
     position:relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-    height: 70px;
+    
     width: 100%;
     background-color: rgb(223, 176, 176);
 }
@@ -32,13 +32,83 @@ header .title-pet{
     align-items: center;
     display: flex;
     text-shadow: #000 2px 1px 2px;
+    position: relative;
+    width: 250px;
+    height: 80px;
 }
 header .title-pet img{
     width: 300px;
     
     
 }
+header .pesquisa{
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    margin-bottom: 30px;
+    
 
+}
+header div input[type=text] {
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #b4ddec;
+    border:1px solid rgb(123, 130, 224);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header div input[type=text]:hover{
+    border:1px solid rgb(16, 28, 187)
+}
+header div nav{
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items:end;
+    justify-content: right;
+}
+header div nav ul li{
+    margin-bottom: -15px;
+}
+header div nav i{
+    font-size: 30px;
+}
+header .navegacao-primaria{
+    display: flex;
+    gap:20px;   
+
+
+}
+
+header .navegacao-primaria li a{
+    width: 0px;
+    height: 0px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    
+}
+
+header .navegacao-primaria li a:hover {
+    text-shadow: #000 2px 1px 2px;
+    color: #d1dbeb;
+}
+
+
+#i{
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 910px) {
+   #i{
+    display: block;
+   }
+   header nav .navegacao-primaria{
+    display: none;
+   }
+}
 header .login {
     display: flex;
     justify-content: center;
@@ -108,7 +178,16 @@ left: 100%;
     transition: width .3s ease-in-out;
    
 }
-
+.btn1 i{
+    
+    font-size: 30px;
+    text-shadow: #cea8a8 2px 1px 2px;
+    display: flex;
+    color: #ff0000;
+    padding: 10px 65px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
 .btn #ii{
     font-size: 30px;
     color: #fff;
@@ -117,8 +196,8 @@ left: 100%;
     margin-top: 15px;
     background-color: #2B2E33;
     position: fixed;
-    width: 250px;
-    height: auto;
+    width: 200px;
+    height: 100%;
     z-index: 1111;
     transition: transform .3s ease-in-out;
     transform: translateX(-260px);
@@ -192,16 +271,20 @@ left: 100%;
 }
 
 #checkbox:checked + .btn {
-  
-    padding: 0 20px;
+    
+    padding: 0 2px;
 }
 
 #checkbox:checked + .btn span {
+    position: absolute;
     display: inline;
     margin-left: 10px;
-   color: #ff0000;
-   font-size: 25px;
-   
+    color: #fffdfd;
+    font-size: 20px;
+    text-shadow: #cf4444 2px 1px 2px;
+    border: 1px solid #2B2E33;
+    background-color: #ff0000;
+    
 }
 /*main*/
 main .carousel{
@@ -213,24 +296,38 @@ main .carousel{
 .carousel-item img{
     height: 75vh;
 }
+main .cont1{
+    width: 100%;
+    height: 100%;
+    background-color: #247D9E   ;
+}
 main .cont2{
-display: flex;
-width: 90%;
-margin: auto;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 5px 0 50px 0;
 }
 main .cont2 div{
-    height: auto;
-    display: flex;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 550px;
+
 }
 main .cont2 div p{
-    width: 50%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 28px;
     align-items: center;
     justify-content:center;
     display: flex;
+    
 }
 main .cont2 img{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 25px;
+    margin:0 auto;
    
 }
 /*carrossel*/
@@ -318,12 +415,16 @@ main .cont2 img{
     margin: auto;
     
 }
-
+.class-butt a{
+    text-decoration: none;
+}
 .img-port .text-proj button:hover{
     box-shadow: none;
 }
 /**/
-
+footer{
+    background-color: #a09f9f;
+}
 /**/
 
 
@@ -334,5 +435,18 @@ main .cont2 img{
     }
     .carousel-item img{
         height: 50vh;
+    }
+    .but{
+        display: none;
+    }
+   
+    main .cont2 div{
+        display: block;
+    }
+    main .cont2 div p{
+        font-size: 21px;
+    }
+    header .title-pet img{
+     width: 250px;
     }
 }

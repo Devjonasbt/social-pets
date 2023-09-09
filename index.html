@@ -19,27 +19,29 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <input type="checkbox" id="checkbox">
-            <label class="btn" for="checkbox"><i id="ii" class="fa fa-bars"></i> <span>Menu</span></label>
-            
-            <div class="sidebar">
-                <ul>
-                    <a href="#"><li>Informação</li></a>
-                    <a href="#"><li>Produtos</li></a>
-                    <a href="#" class="active">Rações</li></a>
-                    <a href="#"><li>xvsjasdgkasd</li></a>
-                    <a href="#"><li>Emaasdfsa</li></a>
-                    <a href="#"><li>Forasdfms</li></a>
-                    <a href="#"><li>UI Elements</li></a>
-                    <a href="#"><li>Paasgaseafs</li></a>
-                    <a href="#"><li>Gasddasdfds</li></a>
-                </ul>
-            </div>
-        </div>
+        
         <div class="title-pet">
             <img src="assets/icones/pet2.png" alt="">
         </div>
+        <div class="pesquisa">
+            <input type="text" name="search" placeholder="Pesquise aqui...">
+        </div>
+        <div >
+            <nav>
+                <ul aria-label="Navegação primaria" class="navegacao-primaria">
+                    <li><a href="#home">informação</a></li>
+                    <li><a href="#sobre">ração</a></li>
+                    <li><a href="#Habilidades">produtos</a></li>
+                    <li><a href="#resumo">acessorios</a></li>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" id="i"></i> 
+                
+                
+            </nav>
+        </div>
+        
+        
         <div class="login ">
             <button class="but">Entar</button>
             <button class="but" id="but1">Cadastro</button>
@@ -48,8 +50,8 @@
     
     </header>
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide"  data-bs-ride="carousel">
-            <div class="carousel-inner" >
+        <div id="carouselExampleSlidesOnly" class="carousel slide"  data-bs-ride="carousel" >
+            <div class="carousel-inner" data-interval="1500" >
               <div class="carousel-item active" >
                 <img src="assets/past-pet/pet1.jpg" class="d-block w-100" alt="...">
               </div>
@@ -61,11 +63,23 @@
               </div>
             </div>
           </div>
+          <section class="cont1">
+            
+            <div><h1>destaque para cachorros</h1></div>
+            <div><h1>destaque para gatos</h1></div>
+          </section>
         <section  class="cont2" >
             <div>
+                
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, perspiciatis voluptate officia architecto quo amet reprehenderit, neque ipsam deserunt eaque animi laborum consequatur. Consequuntur dolor possimus laudantium, vel illum laboriosam!</p>
                 <img src="assets/dall-e-2.webp" alt="">
             </div>
+        </section>
+        <section class="cont1">
+            
+            <div><h1>seu pet tambem pode gostar</h1></div>
+            <p>ai aqui coloca alguns bloquinhos com ração</p>
+            
         </section>
           <section class="carrosel">
             <div class="flex">
@@ -119,7 +133,7 @@
                         </h2>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
-                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                        <div class="class-butt"><button type="button" ><a href="">Ver mais</a></button></div>
                     </div>
                 </div>
                 <div class="img-port" id="item3" data-aos="fade-right">
@@ -145,16 +159,22 @@
                         </h2>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
-                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                        <div class="class-butt"><button type="button" ><a href="">Ver mais</a></button></div>
                     </div>
                 </div>
                 <!---->
             </div>
-          </section>
+        </section>
+        <section class="cont1">
+            
+            <div><h1>Bem-estar e cuidados</h1></div>
+            <p>produtos como casinha, amofadas e briquedos</p>
+            
+        </section>
 
     </main>
     <footer>
-
+        <h1>footer</h1>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
