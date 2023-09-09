@@ -44,7 +44,6 @@ header .title-pet img{
 header .pesquisa{
     width: 50%;
     height: 35px;
-    position: absolute;
     margin-bottom: 30px;
     
 
@@ -62,36 +61,44 @@ header div input[type=text] {
 header div input[type=text]:hover{
     border:1px solid rgb(16, 28, 187)
 }
-header div nav{
-    height: 80px;
-    margin: auto;
+main .div-nav{
+    background-color: rgb(223, 176, 176);
+    height: 28px;
+    display: flex;
+}
+main .div-nav{
+    font-size: 30px;
+    gap:30px;
+    color: #09475e;
+}
+main div nav{
+    
     display: flex;
     align-items:end;
-    justify-content: right;
+    justify-content: left;
 }
-header div nav ul li{
+main div nav ul li{
     margin-bottom: -15px;
+    margin-right: 20px;
 }
-header div nav i{
+main div nav i{
     font-size: 30px;
 }
-header .navegacao-primaria{
+main .navegacao-primaria{
     display: flex;
     gap:20px;   
-
-
 }
 
-header .navegacao-primaria li a{
+main .navegacao-primaria li a{
     width: 0px;
     height: 0px;
     color: #fff;
     font-size: 1.3rem;
-    text-decoration: none;
+    
     
 }
 
-header .navegacao-primaria li a:hover {
+main .navegacao-primaria li a:hover {
     text-shadow: #000 2px 1px 2px;
     color: #d1dbeb;
 }
@@ -105,7 +112,7 @@ header .navegacao-primaria li a:hover {
    #i{
     display: block;
    }
-   header nav .navegacao-primaria{
+   main nav .navegacao-primaria{
     display: none;
    }
 }
