@@ -19,7 +19,7 @@ body{
     background-color:rgba(189, 216, 207, 0.644);
 }
 header{
-    position:relative;
+  
     align-items: center;
     justify-content: space-around;
     display: flex;
@@ -33,21 +33,170 @@ header .title-pet{
     display: flex;
     text-shadow: #000 2px 1px 2px;
     position: relative;
-    width: 250px;
+    width: 100%;
     height: 80px;
+ 
+   
 }
 header .title-pet img{
     width: 300px;
     
     
 }
-header .pesquisa{
-    width: 50%;
-    height: 35px;
-    margin-bottom: 30px;
+header .title-pet div{
+    width: 30%;
+    display: none;
+    justify-content: end;
     
 
 }
+header .title-pet div i{
+    font-size: 50px;
+    color: #BAB5BD;
+   
+    
+   
+}
+header .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+header .login i{
+    font-size: 40px;
+    color: #ffffff;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+.box-busca{ 
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+.search-box-input::placeholder {
+    
+    color:#ffffff;
+    opacity: 0.6;
+
+}
+
+.search-box-input::-webkit-input-placeholder { color: #ffffff; }
+.search-box-input::-moz-placeholder { color: #ffffff; }
+.search-box-input:-ms-input-placeholder { color: #ffffff; }
+
+
+.search-box form {
+    
+    display: flex;
+    border-radius: 50px;
+    background-color: #4c4c4cdc;
+    height: 45px;
+   
+
+}
+
+
+
+.search-box-input {
+
+    outline: 0;
+    font-size: 1.2em;
+    color: #fff;
+    
+    border: none;
+    background: none;
+    transition: .45s;
+
+}
+
+.search-box-button {
+
+   display: flex;
+   border-radius: 50%;
+   width: 45px;
+   height: 45px;
+   background-color: #14c0c7;
+   border: none;
+   cursor: pointer;
+   transition: .3s;
+
+}
+.search-box-input {
+    
+    padding-left: .5em;
+    padding-right: 1em;
+    width: 450px;
+}
+.search-box-button:active  {
+
+    transform: scale(.85);
+
+}
+
+.search-box-icone {
+
+    margin: auto;
+    color: #fff;
+
+}
+
+@media(max-width:990px){
+    header .login .but{
+        display: none;
+    }
+    header .login i{
+        display: flex;
+        margin-right: 15px;
+    }
+  
+}
+@media screen and (max-width: 650px){
+    .box-busca{ 
+        flex-direction: column;
+        
+        align-items:center;
+        
+    }
+    header{
+        display: block;
+        height: 160px;
+    }
+    .title-pet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .box-busca{
+        margin-top: 15px;
+        
+    }
+    .search-box:hover .search-box-input {
+        
+        padding-left: .5em;
+        padding-right: 1em;
+        width: 250px;
+    
+    } 
+ 
+
+    header .title-pet div{
+        display: flex;
+       
+    }
+    header .login{
+        display: none;
+    }
+
+}
+/*
 header div input[type=text] {
     
     width: 100%;
@@ -61,16 +210,19 @@ header div input[type=text] {
 header div input[type=text]:hover{
     border:1px solid rgb(16, 28, 187)
 }
+*/
 main .div-nav{
     background-color: rgb(223, 176, 176);
-    height: 28px;
+    height: 30px;
     display: flex;
+    align-items: end;
 }
 main .div-nav{
     font-size: 30px;
     gap:30px;
     color: #09475e;
 }
+
 main div nav{
     
     display: flex;
@@ -116,11 +268,6 @@ main .navegacao-primaria li a:hover {
     display: none;
    }
 }
-header .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
 .but {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #247D9E;
@@ -165,11 +312,6 @@ transition: all 650ms;
 left: 100%;
 }
 
-@media(max-width:600px){
-    #but1{
-      display: none;
-    }
-}
 /*menu*/
 #checkbox, .btn span { 
     display: none;
@@ -366,6 +508,12 @@ main .cont2 img{
     .img-port{
         width:85%;
     }
+   .search-box-input {  
+        padding-left: .5em;
+        padding-right: 1em;
+        width: auto;
+    
+    } 
   
 }
 .img-port img{
