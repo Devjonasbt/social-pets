@@ -39,7 +39,7 @@ header .title-pet{
    
 }
 header .title-pet img{
-    width: 300px;
+    width: 150px;
     
     
 }
@@ -173,15 +173,14 @@ header .login i{
         align-items: center;
         justify-content: center;
         margin: auto;
+        
     }
+ 
     .box-busca{
         margin-top: 15px;
         
     }
     .search-box:hover .search-box-input {
-        
-        padding-left: .5em;
-        padding-right: 1em;
         width: 250px;
     
     } 
@@ -196,31 +195,19 @@ header .login i{
     }
 
 }
-/*
-header div input[type=text] {
-    
-    width: 100%;
-    height: 40px;
-    border-radius: 15px;
-    background-color: #b4ddec;
-    border:1px solid rgb(123, 130, 224);
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-header div input[type=text]:hover{
-    border:1px solid rgb(16, 28, 187)
-}
-*/
+
 main .div-nav{
     background-color: rgb(223, 176, 176);
     height: 30px;
     display: flex;
     align-items: end;
+    justify-content: space-around;
 }
-main .div-nav{
+main .div-nav div {
     font-size: 30px;
     gap:30px;
-    color: #09475e;
+    display: flex;
+    color: #365c69;
 }
 
 main div nav{
@@ -602,6 +589,6 @@ footer{
         font-size: 21px;
     }
     header .title-pet img{
-     width: 250px;
+     width: 180px;
     }
 }
