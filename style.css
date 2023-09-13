@@ -33,7 +33,7 @@ header .title-pet{
     display: flex;
     text-shadow: #000 2px 1px 2px;
     position: relative;
-    width: 100%;
+    width:40%;
     height: 80px;
  
    
@@ -168,11 +168,12 @@ header .login i{
         display: block;
         height: 160px;
     }
-    .title-pet{
+    header .title-pet{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:space-around;
         margin: auto;
+        width: 100%;
         
     }
  
@@ -195,37 +196,44 @@ header .login i{
     }
 
 }
-
-main .div-nav{
-    background-color: rgb(223, 176, 176);
-    height: 30px;
-    display: flex;
-    align-items: end;
-    justify-content: space-around;
+main #liner{
+    width: 100%;
+    height: 5px;
+    background-color: #14c0c7;
+    
 }
-main .div-nav div {
+main .div-nav{
+    background-color: rgb(206, 91, 91);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px; 
+}
+main .div-nav .div-itens {
     font-size: 30px;
     gap:30px;
     display: flex;
     color: #365c69;
+    margin-right: 15px;
 }
-
-main div nav{
-    
-    display: flex;
-    align-items:end;
-    justify-content: left;
+main .div-nav .button-menu{
+    display: none;
 }
-main div nav ul li{
-    margin-bottom: -15px;
-    margin-right: 20px;
+main ,.div-nav .button-menu button{
+    background-color:transparent;
+}
+main .div-nav nav ul li{
+    margin-top:10px ;
+   
 }
 main div nav i{
     font-size: 30px;
 }
 main .navegacao-primaria{
     display: flex;
-    gap:20px;   
+    gap:30px;
+     
 }
 
 main .navegacao-primaria li a{
@@ -243,14 +251,11 @@ main .navegacao-primaria li a:hover {
 }
 
 
-#i{
-    display: none;
-    cursor: pointer;
-}
+
 @media (max-width: 910px) {
-   #i{
-    display: block;
-   }
+    main .div-nav .button-menu{
+        display:block;
+    }
    main nav .navegacao-primaria{
     display: none;
    }
@@ -425,6 +430,7 @@ left: 100%;
 /*main*/
 main .carousel{
     margin-bottom: 50px;
+    
 }
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out;
@@ -432,6 +438,26 @@ main .carousel{
 .carousel-item img{
     height: 75vh;
 }
+main .circulo-box{
+    background-image: url(assets/dall-e-2.webp);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background 0.5s ease-in-out;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+main .circulo-box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+}
+
 main .cont1{
     width: 100%;
     height: 100%;
@@ -465,6 +491,9 @@ main .cont2 img{
     border-radius: 25px;
     margin:0 auto;
    
+}
+main .card{
+    width: 30%;
 }
 /*carrossel*/
 .flex{
