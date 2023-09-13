@@ -222,6 +222,7 @@ main .div-nav .button-menu{
 }
 main ,.div-nav .button-menu button{
     background-color:transparent;
+    
 }
 main .div-nav nav ul li{
     margin-top:10px ;
@@ -449,13 +450,43 @@ main .circulo-box{
     transition: background 0.5s ease-in-out;
     justify-content: space-evenly;
     align-items: center;
-    display: flex;
+       
+    display:flex;
 }
-main .circulo-box img{
+main .circulo-box .circulo-img{
+    width: 98%;
+    position: relative;
+}
+main .circulo-box .circulo-img div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow-x:scroll;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+
+}
+main .circulo-box .circulo-img nav{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40px;
+}
+main .circulo-box .circulo-img div::-webkit-scrollbar{ 
+    display: none;
+}
+main .circulo-box .circulo-img div img{
+    background-color: #a09f9f;
     width: 300px;
     height: 300px;
+   margin-left: 20px;
+    border: 5px solid rgb(144, 210, 241);
+    cursor:pointer;
     border-radius: 50%;
    
+}
+main .circulo-box .circulo-img div img:hover{
+    border: 6px solid #14c0c7;
 }
 
 main .cont1{
