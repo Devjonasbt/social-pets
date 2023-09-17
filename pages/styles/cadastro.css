@@ -1,0 +1,84 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    width: 40%;
+    padding: 45px;
+    margin: 0 auto;
+    height: 80%;
+}
+
+section form{
+    display: flex;
+    justify-content: start;
+}
+
+form ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form ul li{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+form ul li i{
+    margin-right: 10px;
+}
+
+li.outros{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left:0px;
+
+}
+
+form ul li input{
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 96%;
+
+}
+
+input[type=date]{
+    width: 200px;
+}
+
+li.foto-nome{
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    background-color: tomato;
+    border-radius: 5px;
+}
