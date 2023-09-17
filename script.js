@@ -1,13 +1,24 @@
-const box = document.querySelector(".container");
-const img = document.querySelectorAll(".container img");
+function menuMobile(){
+    const activeMenu = document.querySelector('.fa-bars');
+    const navMenu = document.querySelector('header .navegacao-primaria');
+    
+    
+    activeMenu.addEventListener('click',()=>{
+        activeMenu.classList.toggle('fa-x');
+        navMenu.classList.toggle('ativado');
+    });
 
-let contador=0;
-function carrossel(){
-    contador++;
-    if(contador > img.length - 1){
-        idx = 0;
-    }
-     box.style.transform = 'translateX(${-contador * 1250}px)';
 }
-setInterval(carrossel, 1800);
-Document.body.style.background='red'
+var images = [
+    "assets/past-pet/pet1.jpg",
+    "assets/past-pet/pet2.webp",
+    "assets/past-pet/pet3.jpg",
+    "assets/past-pet/pet4.jpg"
+];
+var cont=0;
+function backImg(){
+   var bg = document.getElementById('bg');
+   var index = Math.floor(Math.random()*images.length);
+   bg.style.backgroundImage='url('+images[index]+')';
+}
+setInterval(backImg, 3000);

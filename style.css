@@ -19,11 +19,11 @@ body{
     background-color:rgba(189, 216, 207, 0.644);
 }
 header{
-    position:relative;
+  
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-    height: 70px;
+    
     width: 100%;
     background-color: rgb(223, 176, 176);
 }
@@ -32,17 +32,234 @@ header .title-pet{
     align-items: center;
     display: flex;
     text-shadow: #000 2px 1px 2px;
+    position: relative;
+    width:40%;
+    height: 80px;
+ 
+   
 }
 header .title-pet img{
-    width: 300px;
+    width: 150px;
     
     
 }
+header .title-pet div{
+    width: 30%;
+    display: none;
+    justify-content: end;
+    
 
+}
+header .title-pet div i{
+    font-size: 50px;
+    color: #BAB5BD;
+   
+    
+   
+}
 header .login {
     display: flex;
     justify-content: center;
     align-items: center;  
+}
+header .login i{
+    font-size: 40px;
+    color: #ffffff;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+.box-busca{ 
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+.search-box-input::placeholder {
+    
+    color:#ffffff;
+    opacity: 0.6;
+
+}
+
+.search-box-input::-webkit-input-placeholder { color: #ffffff; }
+.search-box-input::-moz-placeholder { color: #ffffff; }
+.search-box-input:-ms-input-placeholder { color: #ffffff; }
+
+
+.search-box form {
+    
+    display: flex;
+    border-radius: 50px;
+    background-color: #4c4c4cdc;
+    height: 45px;
+   
+
+}
+
+
+
+.search-box-input {
+
+    outline: 0;
+    font-size: 1.2em;
+    color: #fff;
+    
+    border: none;
+    background: none;
+    transition: .45s;
+
+}
+
+.search-box-button {
+
+   display: flex;
+   border-radius: 50%;
+   width: 45px;
+   height: 45px;
+   background-color: #14c0c7;
+   border: none;
+   cursor: pointer;
+   transition: .3s;
+
+}
+.search-box-input {
+    
+    padding-left: .5em;
+    padding-right: 1em;
+    width: 450px;
+}
+.search-box-button:active  {
+
+    transform: scale(.85);
+
+}
+
+.search-box-icone {
+
+    margin: auto;
+    color: #fff;
+
+}
+
+@media(max-width:990px){
+    header .login .but{
+        display: none;
+    }
+    header .login i{
+        display: flex;
+        margin-right: 15px;
+    }
+  
+}
+@media screen and (max-width: 650px){
+    .box-busca{ 
+        flex-direction: column;
+        
+        align-items:center;
+        
+    }
+    header{
+        display: block;
+        height: 160px;
+    }
+    header .title-pet{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        margin: auto;
+        width: 100%;
+        
+    }
+ 
+    .box-busca{
+        margin-top: 15px;
+        
+    }
+    .search-box:hover .search-box-input {
+        width: 250px;
+    
+    } 
+ 
+
+    header .title-pet div{
+        display: flex;
+       
+    }
+    header .login{
+        display: none;
+    }
+
+}
+main #liner{
+    width: 100%;
+    height: 5px;
+    background-color: #14c0c7;
+    
+}
+main .div-nav{
+    background-color: rgb(206, 91, 91);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px; 
+}
+main .div-nav .div-itens {
+    font-size: 30px;
+    gap:30px;
+    display: flex;
+    color: #365c69;
+    margin-right: 15px;
+}
+main .div-nav .button-menu{
+    display: none;
+}
+main ,.div-nav .button-menu button{
+    background-color:transparent;
+    
+}
+main .div-nav nav ul li{
+    margin-top:10px ;
+   
+}
+main div nav i{
+    font-size: 30px;
+}
+main .navegacao-primaria{
+    display: flex;
+    gap:30px;
+     
+}
+
+main .navegacao-primaria li a{
+    width: 0px;
+    height: 0px;
+    color: #fff;
+    font-size: 1.3rem;
+    
+    
+}
+
+main .navegacao-primaria li a:hover {
+    text-shadow: #000 2px 1px 2px;
+    color: #d1dbeb;
+}
+
+
+
+@media (max-width: 910px) {
+    main .div-nav .button-menu{
+        display:block;
+    }
+   main nav .navegacao-primaria{
+    display: none;
+   }
 }
 .but {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -88,11 +305,6 @@ transition: all 650ms;
 left: 100%;
 }
 
-@media(max-width:600px){
-    #but1{
-      display: none;
-    }
-}
 /*menu*/
 #checkbox, .btn span { 
     display: none;
@@ -108,7 +320,16 @@ left: 100%;
     transition: width .3s ease-in-out;
    
 }
-
+.btn1 i{
+    
+    font-size: 30px;
+    text-shadow: #cea8a8 2px 1px 2px;
+    display: flex;
+    color: #ff0000;
+    padding: 10px 65px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
 .btn #ii{
     font-size: 30px;
     color: #fff;
@@ -117,8 +338,8 @@ left: 100%;
     margin-top: 15px;
     background-color: #2B2E33;
     position: fixed;
-    width: 250px;
-    height: auto;
+    width: 200px;
+    height: 100%;
     z-index: 1111;
     transition: transform .3s ease-in-out;
     transform: translateX(-260px);
@@ -192,20 +413,25 @@ left: 100%;
 }
 
 #checkbox:checked + .btn {
-  
-    padding: 0 20px;
+    
+    padding: 0 2px;
 }
 
 #checkbox:checked + .btn span {
+    position: absolute;
     display: inline;
     margin-left: 10px;
-   color: #ff0000;
-   font-size: 25px;
-   
+    color: #fffdfd;
+    font-size: 20px;
+    text-shadow: #cf4444 2px 1px 2px;
+    border: 1px solid #2B2E33;
+    background-color: #ff0000;
+    
 }
 /*main*/
 main .carousel{
     margin-bottom: 50px;
+    
 }
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out;
@@ -213,25 +439,92 @@ main .carousel{
 .carousel-item img{
     height: 75vh;
 }
+main .circulo-box{
+    background-image: url(assets/dall-e-2.webp);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background 0.5s ease-in-out;
+    justify-content: space-evenly;
+    align-items: center;
+       
+    display:flex;
+}
+main .circulo-box .circulo-img{
+    width: 98%;
+    position: relative;
+}
+main .circulo-box .circulo-img div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow-x:scroll;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+
+}
+main .circulo-box .circulo-img nav{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40px;
+}
+main .circulo-box .circulo-img div::-webkit-scrollbar{ 
+    display: none;
+}
+main .circulo-box .circulo-img div img{
+    background-color: #a09f9f;
+    width: 300px;
+    height: 300px;
+   margin-left: 20px;
+    border: 5px solid rgb(144, 210, 241);
+    cursor:pointer;
+    border-radius: 50%;
+   
+}
+main .circulo-box .circulo-img div img:hover{
+    border: 6px solid #14c0c7;
+}
+
+main .cont1{
+    width: 100%;
+    height: 100%;
+    background-color: #247D9E   ;
+}
 main .cont2{
-display: flex;
-width: 90%;
-margin: auto;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 5px 0 50px 0;
 }
 main .cont2 div{
-    height: auto;
-    display: flex;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 550px;
+
 }
 main .cont2 div p{
-    width: 50%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 28px;
     align-items: center;
     justify-content:center;
     display: flex;
+    
 }
 main .cont2 img{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 25px;
+    margin:0 auto;
    
+}
+main .card{
+    width: 30%;
 }
 /*carrossel*/
 .flex{
@@ -262,6 +555,12 @@ main .cont2 img{
     .img-port{
         width:85%;
     }
+   .search-box-input {  
+        padding-left: .5em;
+        padding-right: 1em;
+        width: auto;
+    
+    } 
   
 }
 .img-port img{
@@ -318,12 +617,16 @@ main .cont2 img{
     margin: auto;
     
 }
-
+.class-butt a{
+    text-decoration: none;
+}
 .img-port .text-proj button:hover{
     box-shadow: none;
 }
 /**/
-
+footer{
+    background-color: #a09f9f;
+}
 /**/
 
 
@@ -334,5 +637,18 @@ main .cont2 img{
     }
     .carousel-item img{
         height: 50vh;
+    }
+    .but{
+        display: none;
+    }
+   
+    main .cont2 div{
+        display: block;
+    }
+    main .cont2 div p{
+        font-size: 21px;
+    }
+    header .title-pet img{
+     width: 180px;
     }
 }

@@ -10,28 +10,34 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <input type="checkbox" id="checkbox">
-            <label class="btn" for="checkbox"><i id="ii" class="fa fa-bars"></i> <span>Menu</span></label>
-            
-            <div class="sidebar">
-                <ul>
-                    <a href="#"><li>Informação</li></a>
-                    <a href="#"><li>Produtos</li></a>
-                    <a href="#" class="active">Rações</li></a>
-                    <a href="#"><li>xvsjasdgkasd</li></a>
-                    <a href="#"><li>Emaasdfsa</li></a>
-                    <a href="#"><li>Forasdfms</li></a>
-                    <a href="#"><li>UI Elements</li></a>
-                    <a href="#"><li>Paasgaseafs</li></a>
-                    <a href="#"><li>Gasddasdfds</li></a>
-                </ul>
-            </div>
-        </div>
+        
         <div class="title-pet">
-            <img src="assets/icones/pet2.png" alt="">
+            <img src="assets/icones/pet3.png" alt="">
+          <div>  <i style=" cursor: pointer;" class="fa-solid fa-user"></i><!--perfil--></div>
         </div>
+        <div class="box-busca">
+            <div class="search-box">
+                
+                <form method="post" action="">
+                    <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                    <button class="search-box-button">
+                        <svg class="search-box-icone" xmlns="http://www.w3.org/2000/svg" width="25px" height="auto" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                
+                </form>
+                
+            </div>
+        
+        </div>
+              
+   
         <div class="login ">
+            
+            <i class="fa-solid fa-user" ></i><!--perfil-->
+            <button class="but">Entar</button>
+            <button class="but" id="but1">Cadastro</button>
             <button class="but"><a href="pages/login.html">Login</a></button>
             <button class="but" id="but1"><a href="pages/cadastro.html">Cadastro</a></button>
             
@@ -39,24 +45,105 @@
     
     </header>
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide"  data-bs-ride="carousel">
-            <div class="carousel-inner" >
-              <div class="carousel-item active" >
-                <img src="assets/past-pet/pet1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/past-pet/pet2.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/past-pet/pet4.jpg" class="d-block w-100" alt="...">
-              </div>
+        <DIV id="liner"></DIV>
+        <div class="div-nav">
+            <nav>
+                <ul aria-label="Navegação primaria" class="navegacao-primaria">
+                    <li><a href="#">informação</a></li>
+                    <li><a href="#">ração</a></li>
+                    <li><a href="#">produtos</a></li>
+                    <li><a href="#">acessorios</a></li>
+                    
+                </ul>
+                
+                <div class="button-menu">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bars"></i> 
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                        <ul>
+                            <li>lista1</li>
+                            <li>lista2</li>
+                            <li>lista3</li>
+                            <li>lista4</li>
+                        </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </nav>
+           <div class="div-itens">
+       
+            <i class="fa-solid fa-dog"></i><!--cachorro-->
+            <i class="fa-solid fa-cat"></i><!--gato-->
+            <i class="fa-solid fa-fish"></i><!--peixe-->
+            <i class="fa-solid fa-heart"></i><!--coração-->
+            <i class="fa-solid fa-shop"></i><!--comprar-->
+           
+
+           </div>
+            
+        </div>
+        <div class="circulo-box" id="bg">
+            <div  class="circulo-img">
+                <div>
+                    <img id="um" src="assets/past-pet/pet1.jpg" alt="">
+                    <img id="dois" src="assets/past-pet/pet2.webp" alt="">
+                    <img id="tres" src="assets/past-pet/pet3.jpg" alt="">
+                    <img id="quatro" src="assets/past-pet/pet1.jpg" alt="">
+                    <img id="cinco" src="assets/past-pet/pet2.webp" alt="">
+                    <img id="seis" src="assets/past-pet/pet3.jpg" alt="">
+                    <img id="sete" src="assets/past-pet/pet3.jpg" alt="">
+                    
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#um" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#dois">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#quatro">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#seis">3</a></li>
+                    
+                    <li class="page-item">
+                        <a class="page-link" href="#sete" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
+        </div>
+  
+        
+    
+        <section class="cont1">
+            
+            <div><h1>destaque para cachorros</h1></div>
+            <div><h1>destaque para gatos</h1></div>
+          </section>
         <section  class="cont2" >
             <div>
+                
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, perspiciatis voluptate officia architecto quo amet reprehenderit, neque ipsam deserunt eaque animi laborum consequatur. Consequuntur dolor possimus laudantium, vel illum laboriosam!</p>
                 <img src="assets/dall-e-2.webp" alt="">
             </div>
+        </section>
+        <section class="cont1">
+            
+            <div><h1>seu pet tambem pode gostar</h1></div>
+            <p>ai aqui coloca alguns bloquinhos com ração</p>
+            
         </section>
           <section class="carrosel">
             <div class="flex">
@@ -78,6 +165,7 @@
                             <button></button>
                         </div>
                     </div>
+                    
                     <div class="text-proj">
                         <h2>
                             Meu primeiro projeto
@@ -110,7 +198,7 @@
                         </h2>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
-                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                        <div class="class-butt"><button type="button" ><a href="">Ver mais</a></button></div>
                     </div>
                 </div>
                 <div class="img-port" id="item3" data-aos="fade-right">
@@ -136,16 +224,45 @@
                         </h2>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vitae rerum reprehenderit ipsam, minus cumque quasi nostrum quod. Cumque assumenda consequuntur error. Sapiente commodi nisi temporibus quam omnis accusamus dolorem!</p>
-                        <div class="class-butt"><button type="button" onclick="clic()"><a href="">Ver mais</a></button></div>
+                        <div class="class-butt"><button type="button" ><a href="">Ver mais</a></button></div>
                     </div>
                 </div>
                 <!---->
             </div>
-          </section>
-
+        </section>
+        <div class="card">
+            <img src="assets/dall-e-2.webp" class="card-img-top" alt="...">
+          
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+        
+        <section class="cont1">
+            
+            <div><h1>Bem-estar e cuidados</h1></div>
+            <p>produtos como casinha, amofadas e briquedos</p>
+            
+        </section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide"  data-bs-ride="carousel" >
+            <div class="carousel-inner" data-interval="1500" >
+              <div class="carousel-item active" >
+                <img src="assets/past-pet/pet1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/past-pet/pet2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/past-pet/pet4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>  
     </main>
     <footer>
-
+        <h1>footer</h1>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
