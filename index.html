@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!---->
-    
+    <link rel="stylesheet" href="pages/styles/elementos.css">
     <link rel="stylesheet" href="style.css">
     <title>Social-pet</title>
 </head>
@@ -146,35 +146,41 @@
            </div>
         </div>
         <div class="circulo-box" id="bg">
-            <div  class="circulo-img">
-                <div>
-                    <img id="um" src="assets/past-pet/pet1.jpg" alt="">
-                    <img id="dois" src="assets/past-pet/pet2.webp" alt="">
-                    <img id="tres" src="assets/past-pet/pet3.jpg" alt="">
-                    <img id="quatro" src="assets/past-pet/pet1.jpg" alt="">
-                    <img id="cinco" src="assets/past-pet/pet2.webp" alt="">
-                    <img id="seis" src="assets/past-pet/pet3.jpg" alt="">
-                    <img id="sete" src="assets/past-pet/pet3.jpg" alt="">
+            <div class="container">
+                <div class="slider-wrapper">
+                  <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                  </button>
+                  <ul class="image-list">
+                    <img class="image-item" src="assets/past-pet/pet1.jpg" alt="img-1" />
+                    <img class="image-item" src="assets/past-pet/pet2.webp" alt="img-2" />
+                    <img class="image-item" src="assets/past-pet/pet3.jpg" alt="img-3" />
+                    <img class="image-item" src="assets/past-pet/pet4.jpg" alt="img-4" />
+                    <img class="image-item" src="assets/past-pet/pet1.jpg" alt="img-5" />
+                    <img class="image-item" src="assets/past-pet/pet2.webp" alt="img-6" />
+                    <img class="image-item" src="assets/past-pet/pet3.jpg" alt="img-7" />
+                    <img class="image-item" src="assets/past-pet/pet4.jpg" alt="img-8" />
+                    <img class="image-item" src="assets/past-pet/pet1.jpg" alt="img-9" />
+                    <img class="image-item" src="assets/past-pet/pet2.webp" alt="img-10" />
+                    <img class="image-item" src="assets/past-pet/pet2.webp" alt="img-6" />
+                    <img class="image-item" src="assets/past-pet/pet3.jpg" alt="img-7" />
+                    <img class="image-item" src="assets/past-pet/pet4.jpg" alt="img-8" />
+                    <img class="image-item" src="assets/past-pet/pet1.jpg" alt="img-9" />
                     
+                  </ul>
+                  <button id="next-slide" class="slide-button material-symbols-rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </button>
                 </div>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#um" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#dois">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#quatro">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#seis">3</a></li>
-                    
-                    <li class="page-item">
-                        <a class="page-link" href="#sete" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                    </ul>
-                </nav>
+                <div class="slider-scrollbar">
+                  <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                  </div>
+                </div>
             </div>
         </div>
   
