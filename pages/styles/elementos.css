@@ -116,9 +116,7 @@
   }
   
   @media(max-width: 1023px) {
-    .slider-wrapper .slide-button {
-      
-    }
+    
   
     .slider-wrapper .image-list {
       gap: 10px;
