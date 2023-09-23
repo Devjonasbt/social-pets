@@ -66,7 +66,7 @@ window.addEventListener("load", initSlider);
 
 
 /**
- * add event on element
+ * adicionado eventos
  */
 
 const addEventOnElem = function (elem, type, callback) {
@@ -81,11 +81,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 
-/**
- * navbar toggle
- */
-
-const navToggler = document.querySelector("[data-nav-toggler]");
+const navToggler = document.querySelector("[data-nav-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
@@ -107,7 +103,7 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
 /**
- * active header when window scroll down to 100px
+
  */
 
 const header = document.querySelector("[data-header]");
