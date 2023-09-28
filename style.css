@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 :root {
 
   --bright-yellow-crayola: hsl(36, 94%, 57%);
@@ -28,10 +32,6 @@
   --fs-8: 1rem;
   --fw-400: 400;
   --fw-700: 700;
-  --section-padding: 40px;
-  --shadow-1: 0 8px 16px hsla(0, 0%, 0%, 0.15);
-  --shadow-2: 0 8px 8px hsla(0, 0%, 0%, 0.2);
-  --radius-4: 4px;
   --radius-10: 10px;  
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
