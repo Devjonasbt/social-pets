@@ -130,10 +130,11 @@ body {
   background-color: var(--black);
   color: var(--white);
   max-width: max-content;
-  padding: 8px 25px;
+  padding: 10px 50px;
   font-weight: var(--fw-700);
   border-radius: 50px;
   transition: var(--transition-1);
+  font-size: 20px;
 }
 
 .section-title {
