@@ -92,6 +92,7 @@ section{
     font-family: 'Bangers', sans-serifS;
     color: var(--portland-orange);
     font-size: 72px;
+    letter-spacing: 7px;
 
 }
 .entrada input{
