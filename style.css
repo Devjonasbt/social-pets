@@ -99,9 +99,8 @@ body {
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
-.container { padding-inline: 15px;
-
-
+.container { 
+  padding-inline: 15px;
 }
 
 .section { padding-block: var(--section-padding); }
@@ -172,7 +171,7 @@ body {
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
   padding-block-end: 20px;
-  margin-block-end: -20px;
+  margin-block-end: 50px;
 }
 
 .scrollbar-item {
@@ -301,7 +300,7 @@ body {
 .navbar-link {
   
   color: black;
-  font-size: var(--fs-5);
+  
   padding: 10px 15px;
   transform: var(--transition-2);
   text-shadow: 1px 1px 1px black;
@@ -323,6 +322,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   
+}
+
+.container .gif{
+  width: 350px;
+  height: 350px;
+  border-radius: 30%;
 }
 
 .hero {
@@ -591,7 +596,7 @@ transition: var(--transition-1);
   }
   .scrollbar-item { min-width: calc(50% - 15px); }
 
-  .offer .grid-list { grid-template-columns: 1fr 1fr; }
+  .grid-list { grid-template-columns: 1fr 1fr; }
 
   .hero {
     display: grid;
@@ -658,7 +663,7 @@ transition: var(--transition-1);
 
   .scrollbar-item { min-width: calc(33.33% - 20px); }
 
-  .offer .grid-list { grid-template-columns: repeat(3, 1fr); }  
+  .offer .grid-list { grid-template-columns: repeat(2, 1fr); }  
   .hero {
     aspect-ratio: 1512 / 784;
     padding-inline-start: 10%;
@@ -680,6 +685,9 @@ transition: var(--transition-1);
   }
 
 }
+@media (min-width:1200px){
+  .offer .grid-list { grid-template-columns: repeat(3, 1fr); }  
+}
 @media (min-width: 992px) {
 
   :root {
@@ -689,7 +697,7 @@ transition: var(--transition-1);
 
   }
 
-  .container { padding-inline: 30px; }
+ 
 
   .scrollbar-item { min-width: calc(20% - 24px); }
   .nav-toggle-btn,
@@ -720,11 +728,11 @@ transition: var(--transition-1);
 
   .navbar-link {
     color: var(--color);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: var(--fw-700);
     transition: var(--transition-1);
   }
-
+  
   .header.active .navbar-link:is(:hover, :focus) { color: var(--portland-orange); }
   .hero { margin-block-start: 0; }
 
@@ -755,7 +763,7 @@ transition: var(--transition-1);
   .footer { padding-block-start: 40px; }
 
   }
-
+  
   .slider-wrapper {
       position: relative;
       width: 100%;
