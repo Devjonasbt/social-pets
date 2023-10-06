@@ -221,7 +221,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 38px;
+  gap: 8px;
 }
 
 .nav-toggle-btn {
