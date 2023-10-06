@@ -25,4 +25,6 @@ header a{
     width: 50%;
     
 }
-
+.fundo{
+    background-image: url(/assets/images/fundo/Produtos.fundo.png);
+}
