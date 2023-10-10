@@ -120,7 +120,16 @@ a{
 .img-none{
     display: none;
     
-    height: 80vh;
+    height: 400px;
+}
+.carousel {
+    width: 70%;
+    margin: auto;
+    height: 30%;
+   
+}
+.carousel-item img{
+    height: 500px;
 }
 
 @media (max-width:785px) {
@@ -194,15 +203,11 @@ a{
 }
 @media (max-width:485px){
     .carousel{
-        width: 99%
-        
+        width: 98%;
     }
-}
-.carousel{
-    width: 70%;
-    margin: auto;
-    
     
 }
+
+
 
 
