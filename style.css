@@ -196,7 +196,7 @@ body {
 
 .grid-list {
   display:grid;
-  gap: 30px;
+  gap: 35px;
 }
 
 .w-100 { width: 100%; }
@@ -325,8 +325,8 @@ body {
 }
 
 .container .gif{
-  width: 350px;
-  height: 350px;
+  width: 8cm;
+  height:8cm ;
   border-radius: 30%;
 }
 
