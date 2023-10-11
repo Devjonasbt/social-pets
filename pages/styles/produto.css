@@ -22,6 +22,9 @@ body{
 a{
     text-decoration: none;
 }
+header{
+
+}
 .navigation{
     display: flex;
     align-items: center;
@@ -33,6 +36,7 @@ a{
     transition: all 0.5s;
     position: fixed;
     z-index: 1;
+    
     
 }
 .navigation .logo{
@@ -81,7 +85,7 @@ a{
 }
 .home{
     width: 100%;
-    
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,7 +125,7 @@ a{
 .img-none{
     display: none;
     
-    height: 400px;
+    height: 350px;
 }
 .carousel {
     width: 70%;
@@ -196,39 +200,41 @@ section div ul li{
     color: #fff;
 }
 .card-img-top{
-    width: 400px;
+    width: 250px;
+    
 }
 
 /*produtos*/
 .has-scrollbar {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
     padding-block-end: 20px;
     margin-block-end: 50px;
 }
 .has-scrollbar::-webkit-scrollbar { height: 10px; }
-.has-scrollbar::-webkit-scrollbar-track {
-    outline: 2px solid var(--portland-orange);
-    border-radius: var(--radius-10);
-}
-.has-scrollbar::-webkit-scrollbar-thumb {
-    border-radius: var(--radius-10);
-    border: 2px solid var(--white);
-}
-.has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 30px); }
-.has-scrollbar { gap: 0; }
+
+
+
+
 .category-card:is(:hover, :focus-within) .img-cover { transform: scale(1.08); }
 
-
 /**/
-@media (max-width:1200px){
+@media (max-width:1300px){
     .has-scrollbar {
         display: grid;
-       grid-template-columns: 2fr 2fr;
+       grid-template-columns: 1fr 1fr 1fr;
         
+    }
+    .home{
+        height: 700px;
+    }
+}
+@media (max-width: 1000px){
+    .has-scrollbar{
+        grid-template-columns: 1fr 1fr ;
     }
 }
 @media (max-width:785px) {
@@ -267,11 +273,11 @@ section div ul li{
     /*main*/
     .home{
         padding: 100px 2%;
-        flex-direction: column;
+        
         text-align: center;
         overflow: hidden;
-        gap: 5rem;
-       
+        gap: 1rem;
+      
         
      
     }
@@ -287,6 +293,7 @@ section div ul li{
     }
     .home-img{
         width: 125%;
+        
     }
     .carousel{
         width: 80%;
@@ -307,6 +314,16 @@ section div ul li{
         width: 95%;
     }
   
+}
+@media(max-width: 560px){
+    .has-scrollbar{
+        display: block;
+    }
+    .home{
+        flex-direction: column;
+        height: 800px;
+        
+    }
 }
 @media (max-width:485px){
     .carousel{
