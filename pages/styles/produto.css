@@ -192,7 +192,7 @@ section div ul li{
     transition: box-shadow .2s;
 }
 
-.card-body button:hover {
+.card-body, .card-prod button:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 .card-body button a{
