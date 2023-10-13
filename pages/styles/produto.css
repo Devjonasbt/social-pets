@@ -140,6 +140,7 @@ a{
 .content{
     margin: auto;
     width: 90%;
+    padding-top: 35px;
     
     
 }
@@ -192,7 +193,7 @@ section div ul li{
     transition: box-shadow .2s;
 }
 
-.card-body, .card-prod button:hover {
+.card-body button:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 .card-body button a{
@@ -202,7 +203,9 @@ section div ul li{
     width: 250px;
     
 }
-
+.card-prod div button:hover{
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
 /*produtos*/
 .has-scrollbar {
     display: flex;
@@ -216,7 +219,9 @@ section div ul li{
 .has-scrollbar::-webkit-scrollbar { height: 10px; }
 
 .category-card:is(:hover, :focus-within) .img-cover { transform: scale(1.08); }
-
+.category-card img{
+    margin: auto;
+}
 /**/
 .card-prod{
     max-width: 1200px;
