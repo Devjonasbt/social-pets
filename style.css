@@ -325,11 +325,23 @@ body {
 }
 
 .container .gif{
-  width: 8cm;
-  height:8cm ;
-  border-radius: 30%;
+  width: 4cm;
+  height:4cm ;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 2px 1px 2px 2px rgba(53, 52, 52, 0.678);
+  
 }
-
+.container .grid-gif{
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
 .hero {
   margin-block-start: 85px;
   min-height: 360px;
@@ -588,7 +600,11 @@ transition: var(--transition-1);
   transform: translateY(-10px);
 }  
 @media (min-width: 575px) {
-
+  .container .gif{
+    width: 6cm;
+    height:6cm ;
+    ;
+  }
   :root {
       --fs-2: 4rem;
       --fs-3: 2.6rem;
@@ -660,7 +676,13 @@ transition: var(--transition-1);
       --fs-1: 9rem;
 
   }
-
+  .container .grid-gif{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
   .scrollbar-item { min-width: calc(33.33% - 20px); }
 
   .offer .grid-list { grid-template-columns: repeat(2, 1fr); }  
@@ -746,7 +768,11 @@ transition: var(--transition-1);
 
 }  
 @media (min-width: 1200px) {
-
+  .container .gif{
+    width: 8cm;
+    height:8cm ;
+   
+  }
   :root {
       --fs-1: 15rem;
       --fs-3: 3.2rem;
