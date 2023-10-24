@@ -13,16 +13,16 @@
             <ul>
                 <li class="foto-nome">
                     <i class="bx bxs-image-add bx-lg bx-border-circle"></i>
-                    <input type="text" placeholder="Nome*">
-                    <input type="date">
+                    <input type="text" placeholder="Nome*" id="nome">
+                    <input type="date" id="dataNascimento">
                 </li>
                 <li class="outros">
                     
-                    <input type="email" placeholder="E-mail*" required>
-                    <input type="text" placeholder="Pai">
-                    <input type="text" placeholder="Mãe">
-                    <input type="password" placeholder="Senha*" required>
-                    <input type="password" placeholder="Repetir senha*" required>
+                    <input type="email" placeholder="E-mail*" id="email" required>
+                    <input type="text" placeholder="Pai" id="nomePai">
+                    <input type="text" placeholder="Mãe" id="nomeMae">
+                    <input type="password" placeholder="Senha*" id="senha" required>
+                    <input type="password" placeholder="Repetir senha*" id="repetirSenha" required>
                 </li>
                 <div class="buttons">
                     <p><a href="../index.html">Voltar</a></p>
@@ -31,5 +31,32 @@
             </ul>
         </form>
     </section>
+
+    <script>
+        function validarCadastro() {
+            var nome = document.getElementById('nome').value;
+            var dataNascimento = document.getElementById('dataNascimento').value;
+            var email = document.getElementById('email').value;
+            var nomePai = document.getElementById('nomePai').value;
+            var nomeMae = document.getElementById('nomeMae').value;
+            var senha = document.getElementById('senha').value;
+            var repetirSenha = document.getElementById('repetirSenha').value;
+
+            if (senha !== repetirSenha) {
+                document.getElementById('mensagemErro').innerText = 'As senhas não coincidem.';
+                return;
+            }
+
+            // var formData = {
+            //     nome: nome,
+            //     dataNascimento: dataNascimento,
+            //     email: email,
+            //     nomePai: nomePai,
+            //     nomeMae: nomeMae,
+            //     senha: senha
+            // };
+            document.getElementById('mensagemErro').innerText = '';
+        }
+    </script>
 </body>
 </html>
