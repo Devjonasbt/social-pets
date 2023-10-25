@@ -10,6 +10,9 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+
 :root{
     --red:#d63a25;
     --white:#fff;
@@ -42,9 +45,18 @@ a{
     font-size: 1.7rem;
     font-weight: 600;
 }
+
+
+.logo{
+    color: var(--dark);
+    font-family: 'Bangers';
+}
+
 .logo span{
     color: var(--dark);
+    font-family: 'Bangers';
 }
+
 .navigation ul{
     display: flex;
     align-items: center;
@@ -60,6 +72,14 @@ a{
 .navigation ul li a:hover{
     color: var(--red);
 }
+/* CORREÇÃO DA MARGEM FANTASMA NA BARRA DE NAVEGAÇÃO*/
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
 .navigation i{
     cursor: pointer;
     font-size: 1.5rem;

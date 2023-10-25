@@ -1,0 +1,4 @@
+*.log
+.idea
+*.txt
+.vscode
