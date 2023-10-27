@@ -1,0 +1,98 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p{
+    font-size: 30px;
+}
+section {
+    margin: px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* TAMANHO DA LINHA DO FORMULÁRIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* distância de um formulário para o outro */
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+/* TAMANHO DA CAIXA DE DIÁLOGO */
+select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BOTÃO COMPARTILHAR (Tamanho a definir)*/
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #258cd1;
+}
+
+/* Posts de outros usuários (A definir)  */
+#posts {
+    margin-top: 50px;
+}
+
+
+
+/* Estilo do rodapé ( a definir )*/
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative ;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* definição da descrição do pet */
+textarea#pet-description {
+    padding: 10px;
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    resize: vertical; 
+}
+
