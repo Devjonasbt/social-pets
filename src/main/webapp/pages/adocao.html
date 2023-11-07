@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages/styles/adocao.css">
+    <title>Pets para Adoção e Doação</title>
+</head>
+<body>
+    <header>
+        <h1>Pets para Adoção e Doação</h1>
+        <p>Compartilhe e encontre um lar amoroso para os pets.</p>
+    </header>
+
+<section id="post-form">
+        
+    <!-- A DEFINIR SE VAI SER ESSA FRASE  -->
+    <h2> Compartilhe com a rede seu pet</h2>
+ <form>
+    <label for="pet-name">Nome do Pet:</label>
+    <input type="text" id="pet-name" name="pet-name" required>
+
+    <label for="pet-type">Tipo de Ação:</label>
+    <select id="pet-type" name="pet-type" required>
+    
+    <option value="doacao">Doação</option>
+    <option value="adocao">Adoção</option>
+</select>
+
+     <label for="pet-photo">Foto do Pet:</label>
+    <input type="file" id="pet-photo" name="pet-photo" accept="image/*" required>
+
+    <label for="pet-weight">Peso do Pet (kg):</label>
+    <input type="number" id="pet-weight" name="pet-weight" required min="0" max="120">
+     <p id="weight-error" class="error-message"></p>
+
+    
+     <!-- TAMANHO DO PET -->
+    <label for="pet-size">Tamanho do Pet:</label>
+    <select id="pet-size" name="pet-size" required>
+    <option value="pequeno">Pequeno</option>
+    <option value="medio">Médio</option>
+    <option value="grande">Grande</option>
+
+
+   <!-- caixa de descrição do pet-->
+    <label for="pet-description">Descrição do Pet:</label>
+    <textarea id="pet-description" name="pet-description" rows="4" placeholder="descreva características do seu  pet ..."></textarea>
+
+
+</select>
+
+
+<button type="submit">Compartilhar</button>
+
+</form> 
+ </section>
+
+    <section id="posts">
+        <h2>Posts dos usuários</h2>
+        <!-- Aqui você pode exibir os posts de outros usuários -->
+        <button class="like-button tooltip">
+            <span class="icon">👍</span>
+            <span class="tooltiptext">Curtir</span>
+        </button>
+        <button class="comment-button tooltip">
+            <span class="icon">💬</span>
+            <span class="tooltiptext">Comentar</span>
+        </button>
+        <button class="share-button tooltip">
+            <span class="icon">🔄</span>
+            <span class="tooltiptext">Compartilhar</span>
+        </button>
+        <!-- Cada post pode ter um botão "Curtir", "Comentar" e "Compartilhar" -->
+
+    </section>
+<script src="js/script.js"> </script>
+
+<footer>
+      <!-- PARTE SUJEITA A ALTERAÇÃO-->
+    <p>&copy; 2023 Pets para Adoção e Doação</p> </footer>
+</body>
+</html>
