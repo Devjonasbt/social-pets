@@ -7,34 +7,61 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import br.com.socialpet.dao.Conexao;
 
 @WebServlet("/create-cadastro")
 public class Cadastro extends HttpServlet {
 
-    private String name;
+    private String nome;
+    private Date data;
+    private String email;
+    private String nomePai;
+    private String nomeMae;
+    private String senha;
+    private String repSenha;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        name = request.getParameter("nome");
-        System.out.println("Nome recebido: " + name);
 
-        // Estabeleça a conexão com o banco de dados
+        nome = request.getParameter("nome");
+        email = request.getParameter("email");
+        data = Date.valueOf(request.getParameter("data"));
+        nomePai = request.getParameter("nomePai");
+        nomeMae = request.getParameter("nomeMae");
+        senha = request.getParameter("senha");
+        repSenha = request.getParameter("repSenha");
+
+        System.out.println("Nome recebido: " + nome);
+        System.out.println("Email recebido: " + email);
+        System.out.println("Data recebida: " + data);
+        System.out.println("Nome do Pai recebido: " + nomePai);
+        System.out.println("Nome da Mãe recebido: " + nomeMae);
+        System.out.println("Senha recebida: " + senha);
+        System.out.println("Senha Repetida: " + repSenha);
+
         Connection conn = new Conexao().conectar();
 
         if (conn != null) {
             try {
-                String sql = "INSERT INTO cadastrar (nome) VALUES (?)";
+                String insertNome = "INSERT INTO cadastrar (nome,data,email, nomePai, nomeMae, senha, repSenha) VALUES (?,?,?,?,?,?,?)";
 
-                PreparedStatement preparedStatement = conn.prepareStatement(sql);
+                PreparedStatement preparedStatementNome = conn.prepareStatement(insertNome);
 
-                preparedStatement.setString(1, name);
 
-                int rowsAffected = preparedStatement.executeUpdate();
+                preparedStatementNome.setString(1, nome);
+                preparedStatementNome.setString(2, String.valueOf(data));
+                preparedStatementNome.setString(3, email);
+                preparedStatementNome.setString(4, nomePai);
+                preparedStatementNome.setString(5, nomeMae);
+                preparedStatementNome.setString(6, senha);
+                preparedStatementNome.setString(7, repSenha);
 
-                if (rowsAffected > 0) {
+                int executar = preparedStatementNome.executeUpdate();
+
+                if (executar > 0) {
                     System.out.println("Inserção bem-sucedida.");
                 } else {
                     System.out.println("Nenhuma linha foi afetada pela inserção.");
@@ -59,10 +86,58 @@ public class Cadastro extends HttpServlet {
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
 
     public void setName(String nome) {
-        this.name = nome;
+        this.nome = nome;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getNomePai() {
+        return nomePai;
+    }
+
+    public void setNomePai(String nomePai) {
+        this.nomePai = nomePai;
+    }
+
+    public String getNomeMae() {
+        return nomeMae;
+    }
+
+    public void setNomeMae(String nomeMae) {
+        this.nomeMae = nomeMae;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getRepSenha() {
+        return repSenha;
+    }
+
+    public void setRepSenha(String repSenha) {
+        this.repSenha = repSenha;
     }
 }

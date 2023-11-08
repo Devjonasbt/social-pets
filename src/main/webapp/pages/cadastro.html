@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/cadastro.css">
-    <link rel="shortcut icon" href="../assets/" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Pet | Cadastro</title>
 </head>
 <body>
-    <section>
-        <form action="/create-cadastro" method="post">
-            <ul>
-                <li><input type="text" placeholder="Nome*" id="nome" name="nome"></li>
-                <li><input type="date" id="dataNascimento"></li>
-                <li><input type="email" placeholder="E-mail*" id="email" name="email"></li>
-                <li><input type="text" placeholder="Pai" id="nomePai" name="nomePai"></li>
-                <li><input type="text" placeholder="Mãe" id="nomeMae" name="nomeMae"></li>
-                <li><input type="password" placeholder="Senha*" id="senha" name="senha"></li>
-                <li><input type="password" placeholder="Repetir senha*" id="repetirSenha" name="repetirSenha"></li>
-            </ul>
-            <ul>
-                <li><p><a href="../index.html">Voltar</a></p></li>
-                <li><button type="submit">CADASTRAR PET</button></li>
-            </ul>
-        </form>
-    </section>
+<section>
+    <form action="/create-cadastro" method="post">
+        <ul>
+            <li class="foto-nome">
+                <i class="bx bxs-image-add bx-lg bx-border-circle"></i>
+                <input type="text" placeholder="Nome*" name="nome">
+                <input type="date" name="data">
+            </li>
+            <li class="outros">
+                <input type="email" placeholder="E-mail*" name="email" >
+                <input type="text" placeholder="Pai" name="nomePai">
+                <input type="text" placeholder="Mãe" name="nomeMae">
+                <input type="password" placeholder="Senha*" name="senha">
+                <input type="password" placeholder="Repetir senha*" name="repSenha">
+            </li>
+            <div class="buttons">
+                <button type="submit">CADASTRAR PET</button>
+            </div>
+        </ul>
+    </form>
+</section>
 </body>
 </html>
