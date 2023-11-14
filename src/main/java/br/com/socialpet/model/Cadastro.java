@@ -21,6 +21,10 @@ public class Cadastro extends HttpServlet {
     private String nomeMae;
     private String senha;
     private String repSenha;
+    private String logradouro;
+    private String cidade;
+    private String cep;
+    private String estado;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -33,6 +37,11 @@ public class Cadastro extends HttpServlet {
         nomeMae = request.getParameter("nomeMae");
         senha = request.getParameter("senha");
         repSenha = request.getParameter("repSenha");
+        logradouro = request.getParameter("logradouro");
+        cidade = request.getParameter("cidade");
+        cep = request.getParameter("cep");
+        estado = request.getParameter("estado");
+
 
         /*
         System.out.println("Nome recebido: " + nome);
@@ -47,7 +56,7 @@ public class Cadastro extends HttpServlet {
 
         if (conn != null) {
             try {
-                String insert = "INSERT INTO cadastrar (nome,data,email, nomePai, nomeMae, senha, repSenha) VALUES (?,?,?,?,?,?,?)";
+                String insert = "INSERT INTO cadastrar (nome,data,email, nomePai, nomeMae, senha, repSenha, logradouro, cidade, cep, estado) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
 
                 PreparedStatement preparedStatementNome = conn.prepareStatement(insert);
 
@@ -59,6 +68,10 @@ public class Cadastro extends HttpServlet {
                 preparedStatementNome.setString(5, nomeMae);
                 preparedStatementNome.setString(6, senha);
                 preparedStatementNome.setString(7, repSenha);
+                preparedStatementNome.setString(8, logradouro);
+                preparedStatementNome.setString(9, cidade);
+                preparedStatementNome.setString(10, cep);
+                preparedStatementNome.setString(11, estado);
 
                 int executar = preparedStatementNome.executeUpdate();
 
@@ -141,4 +154,38 @@ public class Cadastro extends HttpServlet {
     public void setRepSenha(String repSenha) {
         this.repSenha = repSenha;
     }
+
+    public String getLogradouro() {
+        return logradouro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    
 }

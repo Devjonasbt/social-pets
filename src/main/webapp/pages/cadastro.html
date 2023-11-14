@@ -5,6 +5,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/cadastro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icones/pngwing.com.png" type="image/x-icon">
     <title>Social Pet | Cadastro</title>
 </head>
 <body>
@@ -12,16 +13,21 @@
     <form action="/create-cadastro" method="post">
         <ul>
             <li class="foto-nome">
-                <i class="bx bxs-image-add bx-lg bx-border-circle"></i>
-                <input type="text" placeholder="Nome*" name="nome">
+                <input type="text" placeholder="Nome" name="nome" required>
                 <input type="date" name="data">
             </li>
             <li class="outros">
-                <input type="email" placeholder="E-mail*" name="email" >
-                <input type="text" placeholder="Pai" name="nomePai">
-                <input type="text" placeholder="Mãe" name="nomeMae">
-                <input type="password" placeholder="Senha*" name="senha">
-                <input type="password" placeholder="Repetir senha*" name="repSenha">
+                <input type="email" placeholder="E-mail" name="email" required>
+                <input type="text" placeholder="Pai" name="nomePai" required>
+                <input type="text" placeholder="Mãe" name="nomeMae" required>
+                <input type="password" placeholder="Senha" name="senha" required>
+                <input type="password" placeholder="Repetir senha" name="repSenha" required>
+                <input type="text" name="logradouro" placeholder="Logradouro e Nº" required>
+                <input type="text" name="cidade" placeholder="Cidade" required>
+                <div class="address">
+                    <input type="text" name="cep" placeholder="CEP" required>
+                    <input type="text" name="estado" placeholder="Estado" required>
+                </div>
             </li>
             <div class="buttons">
                 <button type="submit">CADASTRAR PET</button>

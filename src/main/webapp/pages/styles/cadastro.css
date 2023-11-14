@@ -123,13 +123,18 @@ li.foto-nome{
     justify-content: space-around;
 }
 
+div.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .buttons button{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
-    background-color: #1e1c2a;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
