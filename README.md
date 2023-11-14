@@ -1,6 +1,3 @@
-# Social Pet
-Um site para cadastros de informações de animais de estimação.
-
 ## COMO INICIAR
 
 1 - FAÇA UM FORK DESSE REPOSITÓRIO, TODAS E QUAISQUER ALTEREÇÕES PRECISAM SER ADICIONADAS ATRAVES DE PULL REQUESTS.
@@ -30,6 +27,26 @@ Então ficará assim:
 
 
 ## SOBRE O SITE
+
+<img src="src/main/resources/image_to_md/banner.png" alt="Banner">
+
+#### Um site para cadastros de informações de animais de estimação, você poderá criar o seu cadastro e acessar as informações do seu pet na palma da sua mão, A SOCIAL PET possui seu banco de dados remoto no servidor do Clever Cloud.
+
+## ESTRUTURA DA APLICAÇÃO.
+
+<img src="src/main/resources/image_to_md/estrutura.png" alt="Estrutura">
+
+<p>Possuímos 3 classes, uma para coneção e outra para fazer requisições Post para o banco de dados, infelizmente não adicionamos muitas regras de autentificação por ser apenas um projeto simples, basicamente com baixar regra de negócio.</p>
+
+<p>O front-end da nossa página está inserida na pasta <strong>WEBAPP.</strong></p>
+
+## BANCO DE DADOS MYSQL
+
+<img src="src/main/resources/image_to_md/db_conn.png" alt="Banco de Dados">
+
+<p>O nosso banco de dados como eu ja disse, está armazenado no servidor remoto da Clever Cloud de forma gratuita. A estrutura do nosso banco consiste apenas em uma tabela chamada CADASTRO onde armazenamos os dados dos nossos clientes.</p>
+
+<img src="src/main/resources/image_to_md/db_resume.png" alt="Banco de Dados">
 
 
 
