@@ -2,6 +2,5 @@
 .idea
 *.txt
 .vscode
-node_modules
+
 .idea
-target

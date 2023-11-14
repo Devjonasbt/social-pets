@@ -10,12 +10,10 @@ public class Conexao {
         Connection conn = null;
 
         try {
-            // Configurações do banco de dados
             String url = "jdbc:mysql://bk1jwhvz2w0bcspk7qld-mysql.services.clever-cloud.com:3306/bk1jwhvz2w0bcspk7qld";
             String usuario = "uvmexunuh952emqc";
             String senha = "ahTkmHGBRFHkidXgPXz3";
 
-            // Conectar ao banco de dados
             conn = DriverManager.getConnection(url, usuario, senha);
             System.out.println("Conectado.");
 

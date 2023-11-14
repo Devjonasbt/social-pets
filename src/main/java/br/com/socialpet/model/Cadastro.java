@@ -34,6 +34,7 @@ public class Cadastro extends HttpServlet {
         senha = request.getParameter("senha");
         repSenha = request.getParameter("repSenha");
 
+        /*
         System.out.println("Nome recebido: " + nome);
         System.out.println("Email recebido: " + email);
         System.out.println("Data recebida: " + data);
@@ -41,7 +42,7 @@ public class Cadastro extends HttpServlet {
         System.out.println("Nome da Mãe recebido: " + nomeMae);
         System.out.println("Senha recebida: " + senha);
         System.out.println("Senha Repetida: " + repSenha);
-
+        */
         Connection conn = new Conexao().conectar();
 
         if (conn != null) {
