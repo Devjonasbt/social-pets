@@ -46,9 +46,9 @@ public class Cadastro extends HttpServlet {
 
         if (conn != null) {
             try {
-                String insertNome = "INSERT INTO cadastrar (nome,data,email, nomePai, nomeMae, senha, repSenha) VALUES (?,?,?,?,?,?,?)";
+                String insert = "INSERT INTO cadastrar (nome,data,email, nomePai, nomeMae, senha, repSenha) VALUES (?,?,?,?,?,?,?)";
 
-                PreparedStatement preparedStatementNome = conn.prepareStatement(insertNome);
+                PreparedStatement preparedStatementNome = conn.prepareStatement(insert);
 
 
                 preparedStatementNome.setString(1, nome);

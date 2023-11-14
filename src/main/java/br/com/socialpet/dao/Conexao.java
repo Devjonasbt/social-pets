@@ -10,16 +10,19 @@ public class Conexao {
         Connection conn = null;
 
         try {
-            String user = "root";
-            String password = "root";
-            String url = "jdbc:mysql://localhost:3306/cadastro?user="+user+"&password="+password;
-            conn = DriverManager.getConnection(url);
+            // Configurações do banco de dados
+            String url = "jdbc:mysql://bk1jwhvz2w0bcspk7qld-mysql.services.clever-cloud.com:3306/bk1jwhvz2w0bcspk7qld";
+            String usuario = "uvmexunuh952emqc";
+            String senha = "ahTkmHGBRFHkidXgPXz3";
+
+            // Conectar ao banco de dados
+            conn = DriverManager.getConnection(url, usuario, senha);
             System.out.println("Conectado.");
 
-
-        }catch (SQLException erro){
+        } catch (SQLException erro) {
             System.out.printf("O erro está na classe de conexão "+erro.getMessage());
         }
+
 
         return conn;
 
