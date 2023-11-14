@@ -1,5 +1,5 @@
 # Social Pet
-Um site para cadastros de informações de animais de estimação. https://devnylo.github.io/social-pet/
+Um site para cadastros de informações de animais de estimação.
 
 ## COMO INICIAR
 
@@ -27,4 +27,9 @@ Então ficará assim:
 2 - Não é necessário usar o comando <strong>git remote add</strong> novamente, o comando <strong>git remote -v</strong> vai mostrar as URL remota vinculadas ao seu fork.
 
 3 - Agora não esqueça, toda vez que for codar, execute esses passos para manter seu fork atualizado e evitar que dê conflito com o amiguinho ao fazer pull request.
+
+
+## SOBRE O SITE
+
+
 
