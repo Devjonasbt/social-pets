@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
 
-@WebServlet("/login")
-public class Login extends HttpServlet {
+@WebServlet("/user")
+public class User extends HttpServlet {
 
     private String email;
     private String password;
@@ -23,7 +23,7 @@ public class Login extends HttpServlet {
 
         if (credentialsValid) {
             System.out.println("Credenciais válidas para Email: " + email + " e Senha: " + password);
-            request.getRequestDispatcher("pages/user.jsp").forward(request, response);
+            request.getRequestDispatcher("index.html").forward(request, response);
         } else {
             System.out.println("Credenciais inválidas para Email: " + email + " e Senha: " + password);
         }

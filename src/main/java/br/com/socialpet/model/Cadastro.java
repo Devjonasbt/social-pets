@@ -96,7 +96,7 @@ public class Cadastro extends HttpServlet {
             System.out.println("Falha na conexão com o banco de dados.");
         }
 
-        request.getRequestDispatcher("index.html").forward(request, response);
+        request.getRequestDispatcher("pages/login.html").forward(request, response);
     }
 
     public String getName() {

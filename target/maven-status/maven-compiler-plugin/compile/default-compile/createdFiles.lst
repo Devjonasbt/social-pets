@@ -1,3 +1,4 @@
 br\com\socialpet\dao\Conexao.class
 br\com\socialpet\model\Cadastro.class
+br\com\socialpet\model\User.class
 br\com\socialpet\model\Login.class
