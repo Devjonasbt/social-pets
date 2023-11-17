@@ -1,3 +1,91 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+:root {
+
+    --bright-yellow-crayola: hsl(36, 94%, 57%);
+    --portland-orange: hsl(15, 84%, 57%);
+    --battleship-gray: hsl(0, 0%, 53%);
+    --silver-chalice: hsl(0, 0%, 70%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(208, 7%, 46%);
+    --raisin-black: hsl(228, 6%, 17%);
+    --eerie-black: hsl(210, 3%, 13%);
+    --bittersweet: hsl(9, 96%, 69%);
+    --light-gray: hsl(0, 0%, 80%);
+    --platinum: hsl(0, 0%, 91%);
+    --amber: hsl(45, 100%, 51%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(220, 2%, 24%);
+    --ff-bangers: 'Bangers', cursive;
+    --ff-carter_one: 'Carter One', cursive;
+    --ff-nunito_sans: 'Nunito Sans', sans-serif;
+    --fs-1: 6.5rem;
+    --fs-2: 3.2rem;
+    --fs-3: 2.4rem;
+    --fs-4: 2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.5rem;
+    --fs-7: 1.4rem;
+    --fs-8: 1rem;
+    --fw-400: 400;
+    --fw-700: 700;
+    --radius-10: 10px;  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin-left: 50px;
+    padding: 0;
+    display: flex;
+    background-image: url('../../assets/images/backUser.jpg');
+    background-size: 100%;
+    background-position: auto;
+    background-repeat: no-repeat;
+}
+
+
+  a{
+    text-decoration: none;
+    color: #fff;
+}
+
+  .back{
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 26px;
+    padding-right: 26px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.292);
+
+    background-color: var(--amber);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+  
+
+.profile-container {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 20%;
+=======
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +95,7 @@ body {
 .profile-container {
     display: flex;
     justify-content: center;
+>>>>>>> 95d1034c081a72cab555632b6de177fd86167e85
     align-items: center;
     height: 100vh;
 }
@@ -16,18 +105,64 @@ body {
 }
 
 #profile-image {
+<<<<<<< HEAD
+    background-color: #fff;
+=======
+>>>>>>> 95d1034c081a72cab555632b6de177fd86167e85
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
 .profile-info {
+<<<<<<< HEAD
+    background-color: rgba(243, 181, 109, 0.507);
     margin-left: 20px;
+    padding: 50px;
+    background-size: auto;
+    border-radius: 10%;
+    
+=======
+    margin-left: 20px;
+>>>>>>> 95d1034c081a72cab555632b6de177fd86167e85
 }
 
 input[type="file"] {
     display: none;
 }
 
+<<<<<<< HEAD
+.carousel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
 
+.carousel-inner{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    trasnform: translatex(0);
+    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-left: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .profile-info {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+=======
+
+>>>>>>> 95d1034c081a72cab555632b6de177fd86167e85
 
