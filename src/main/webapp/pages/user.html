@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main/webapp/pages/styles/user.css">
+    <title>User Profile</title>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img id="profile-image" src="placeholder.jpg" alt="Profile Picture">
+            <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+        </div>
+        <div class="profile-info">
+            <p><strong>ID:</strong> <span id="user-id">123</span></p>
+            <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
+            <p><strong>Email:</strong> <span id="user-email">john.doe@example.com</span></p>
+            <p><strong>Phone:</strong> <span id="user-phone">(123) 456-7890</span></p>
+            <p><strong>Address:</strong> <span id="user-address">123 Main St, Cityville</span></p>
+        </div>
+    </div>
+
+    <script src="../js/user.js"></script>
+</body>
+</html>
