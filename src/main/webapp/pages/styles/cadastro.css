@@ -136,9 +136,33 @@ div.address{
     padding-bottom: 10px;
     cursor: pointer;
     color: white;
+    background-color: var(--bittersweet);
+    font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    border-radius: 5%;
+    border: none;
+    box-shadow: 2px 2px 5px black;
 }
 
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+
+    }
+
+    100%{
+        transform: scale(1.10);
+
+    }
+}
+
+.buttons button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 

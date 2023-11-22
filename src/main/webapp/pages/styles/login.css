@@ -115,13 +115,13 @@ section{
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-
     font-family: var(--ff-carter_one);
     font-size: 14px;
     background-color: #F9942A;
     color: #fff;
     border: none;
-    box-shadow: 1px 1px 2px 1px black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px black;
     cursor: pointer;
 }
 
@@ -131,14 +131,35 @@ section{
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-
     font-family: var(--ff-carter_one);
     font-size: 14px;
     background-color: var(--bittersweet);
-
     border: none;
-    box-shadow: 1px 1px 2px 1px black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px black;
     cursor: pointer;
+}
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+
+    }
+
+    100%{
+        transform: scale(1.10);
+
+    }
+}
+
+#cadastro:hover,
+#login:hover,
+.back:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .back{
@@ -151,7 +172,6 @@ section{
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.292);
-
     background-color: var(--amber);
     color: #fff;
     font-size: 16px;

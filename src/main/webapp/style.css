@@ -910,3 +910,44 @@ transition: var(--transition-1);
     height: 150px;
   }
 }  
+
+@keyframes animaPadrão{
+  0%{
+      transform: scale(1);
+
+  }
+
+  100%{
+      transform: scale(1.5);
+
+  }
+}
+
+@keyframes animaLogo{
+  0%{
+      transform: scale(1);
+
+  }
+
+  100%{
+      transform: scale(1.2);
+
+  }
+}
+
+.action-btn:hover{
+  animation-name: animaPadrão;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ }
+
+.logo:hover{
+  animation-name: animaLogo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-shadow: 5px 5px 5px black;
+}
