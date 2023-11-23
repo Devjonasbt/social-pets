@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/user.css">
-     <script type="text/javascript">
+    <script type="text/javascript">
         function expandirElemento(element) {
             // Remove a classe "expanded" de todos os elementos
             var elementos = document.querySelectorAll('.profile > div');
@@ -36,32 +36,33 @@
     <title>User Profile</title>
 </head>
 <body>
-    <section class="profile">
-        <div class="item1" onclick="itemUm(this);">
-            <div>
-                <h1>DADOS</h1>
-            </div>
-            <div class="dados">
-                <img src="../assets/icones/pngwing.com.png" alt="Foto" width="100px" style="border-radius: 50%; border: 1px solid black; margin-bottom: 20px;">
-                <input type="text" placeholder="NOME">
-                <input type="text" placeholder="DATA DE NASCIMENTO">
-                <input type="text" placeholder="EMAIL">
-                <input type="text" placeholder="LOGRADOURO">
-                <input type="text" placeholder="CIDADE">
-                <input type="text" placeholder="CEP">
-                <input type="text" placeholder="ESTADO">
-            </div>
+<section class="profile">
+    <div class="item1" onclick="itemUm(this);">
+        <div class="titulo">
+            <h1>DADOS</h1>
         </div>
-        <div class="item2" onclick="itemDois(this);">
-            <div>
-                <h1>SOBRE</h1>
-            </div>
+        <div class="dados">
+            <img src="../assets/icones/pngwing.com.png" alt="Foto" width="100px" style="border-radius: 50%; border: 1px solid black; margin-bottom: 20px;">
+            <span>ID: ${userData.id}</span>
+            <span>NOME: ${userData.nome}</span><br>
+            <span>NASCIMENTO: ${userData.dataNascimento}</span><br>
+            <span>EMAIL: ${userData.email}</span><br>
+            <span>RUA: ${userData.logradouro}</span><br>
+            <span>CIDADE: ${userData.cidade}</span><br>
+            <span>CEP: ${userData.cep}</span><br>
+            <span>ESTADO: ${userData.estado}</span><br>
         </div>
-        <div class="item3" onclick="itemTres(this);">
-            <div>
-                <h1>EXAMES</h1>
-            </div>
+    </div>
+    <div class="item2" onclick="itemDois(this);">
+        <div>
+            <h1>SOBRE</h1>
         </div>
-    </section>
+    </div>
+    <div class="item3" onclick="itemTres(this);">
+        <div>
+            <h1>EXAMES</h1>
+        </div>
+    </div>
+</section>
 </body>
 </html>

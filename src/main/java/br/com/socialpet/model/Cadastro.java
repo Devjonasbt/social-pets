@@ -77,6 +77,7 @@ public class Cadastro extends HttpServlet {
 
                 if (executar > 0) {
                     System.out.println("Inserção bem-sucedida.");
+                    request.getRequestDispatcher("index.html").forward(request, response);
                 } else {
                     System.out.println("Nenhuma linha foi afetada pela inserção.");
                 }
@@ -96,7 +97,7 @@ public class Cadastro extends HttpServlet {
             System.out.println("Falha na conexão com o banco de dados.");
         }
 
-        request.getRequestDispatcher("pages/login.html").forward(request, response);
+
     }
 
     public String getName() {
