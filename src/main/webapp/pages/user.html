@@ -1,87 +1,67 @@
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icones/pngwing.com.png" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/pages/styles/user.css">-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon"  href="../assets/icones/pngwing.com.png" type="image/svg+xml">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/user.css">
+     <script type="text/javascript">
+        function expandirElemento(element) {
+            // Remove a classe "expanded" de todos os elementos
+            var elementos = document.querySelectorAll('.profile > div');
+            elementos.forEach(function(el) {
+                el.classList.remove('expanded');
+            });
+
+            // Adiciona a classe "expanded" ao elemento clicado
+            element.classList.add('expanded');
+        }
+
+        function itemUm(element) {
+            expandirElemento(element);
+        }
+
+        function itemDois(element) {
+            expandirElemento(element);
+        }
+
+        function itemTres(element) {
+            expandirElemento(element);
+        }
+    </script>
     <title>User Profile</title>
 </head>
-
 <body>
-<a href="../index.html">
-    <button class="back">Voltar</button>
-</a>
-
-<div class="profile-container">
-    <div class="profile-picture">
-        <img id="profile-image" src="../assets/images/homem-retrato-rindo.jpg" alt="Profile Picture">
-        <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
-    </div>
-
-    <div class="profile-info">
-        <p><strong>ID:</strong> <span id="user-id">123</span></p>
-        <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
-        <p><strong>Email:</strong> <span id="user-email">john.doe@example.com</span></p>
-        <p><strong>Phone:</strong> <span id="user-phone">(123) 456-7890</span></p>
-        <p><strong>Address:</strong> <span id="user-address">123 Main St, Cityville</span></p>
-    </div>
-</div>
-
-
-<div id="carouselExampleInterval" class="carousel" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item" data-bs-interval="10000">
-            <img src="../assets/images/brinquedosPets.jpg" class="d-block w-100" alt="Brinquedos para Pets">
-            <div class="carousel-text">
-                <h3>Brinquedos variados</h3>
-                <p>Encontre o brinquedo perfeito para seu pet!</p>
+    <section class="profile">
+        <div class="item1" onclick="itemUm(this);">
+            <div>
+                <h1>DADOS</h1>
             </div>
-            
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img src="../assets/images/comidaCachorro.jpg" class="d-block w-100" alt="Comida para Cachorro">
-            <div class="carousel-text">
-                <h3>Rações para Cães</h3>
-                <p>As rações mais saborosas para seu cão!</p>
-            </div>    
-        </div>
-        <div class="carousel-item active">
-            <img src="../assets/images/comidaGato.jpg" class="d-block w-100" alt="Comida para Gato">
-            <div class="carousel-text">
-                <h2>Ração para Gatos</h2>
-                <p>Faça seu gato sentir o que é ser como o Garfield.</p>
+            <div class="dados">
+                <img src="../assets/icones/pngwing.com.png" alt="Foto" width="100px" style="border-radius: 50%; border: 1px solid black; margin-bottom: 20px;">
+                <input type="text" placeholder="NOME">
+                <input type="text" placeholder="DATA DE NASCIMENTO">
+                <input type="text" placeholder="EMAIL">
+                <input type="text" placeholder="LOGRADOURO">
+                <input type="text" placeholder="CIDADE">
+                <input type="text" placeholder="CEP">
+                <input type="text" placeholder="ESTADO">
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="../assets/images/curativoCachorro.jpg" class="d-block w-100" alt="Curativo para Cachorro">
-            <div class="carousel-text">
-                <h2>Ala médica</h2>
-                <p>O profissional que você procura pode estar na nossa lista!</p>
+        <div class="item2" onclick="itemDois(this);">
+            <div>
+                <h1>SOBRE</h1>
             </div>
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<script src="script.js" defer></script>
-<script src="../src/main/webapp/js/user.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-zziTZocNHPs3Lg8r+YU6YAqV0jzdb+Q8pxrn+M46EAg4Z+dDIIZx8k4t0cBhKT6" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <div class="item3" onclick="itemTres(this);">
+            <div>
+                <h1>EXAMES</h1>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
