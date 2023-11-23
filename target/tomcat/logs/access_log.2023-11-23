@@ -327,3 +327,8 @@
 127.0.0.1 - - [23/Nov/2023:16:36:03 -0300] "GET /styles/user.css HTTP/1.1" 404 981 http-bio-8080-exec-7 0
 127.0.0.1 - - [23/Nov/2023:16:36:03 -0300] "GET /pages/styles/user.css HTTP/1.1" 200 3261 http-bio-8080-exec-8 6
 127.0.0.1 - - [23/Nov/2023:16:36:03 -0300] "GET /assets/icones/pngwing.com.png HTTP/1.1" 200 18282 http-bio-8080-exec-7 1
+127.0.0.1 - - [23/Nov/2023:16:39:31 -0300] "GET /assets/images/hero-banner.jpg HTTP/1.1" 200 151984 http-bio-8080-exec-1 29
+127.0.0.1 - - [23/Nov/2023:16:40:18 -0300] "POST /create-cadastro HTTP/1.1" 200 35202 http-bio-8080-exec-4 2301
+127.0.0.1 - - [23/Nov/2023:16:40:31 -0300] "POST /login HTTP/1.1" 200 2461 http-bio-8080-exec-5 3511
+127.0.0.1 - - [23/Nov/2023:16:40:31 -0300] "GET /pages/styles/user.css HTTP/1.1" 304 - http-bio-8080-exec-6 2
+127.0.0.1 - - [23/Nov/2023:16:40:31 -0300] "GET /styles/user.css HTTP/1.1" 404 981 http-bio-8080-exec-8 1

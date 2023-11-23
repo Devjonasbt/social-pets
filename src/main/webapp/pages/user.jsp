@@ -11,13 +11,11 @@
     <link rel="stylesheet" href="styles/user.css">
     <script type="text/javascript">
         function expandirElemento(element) {
-            // Remove a classe "expanded" de todos os elementos
             var elementos = document.querySelectorAll('.profile > div');
             elementos.forEach(function(el) {
                 el.classList.remove('expanded');
             });
 
-            // Adiciona a classe "expanded" ao elemento clicado
             element.classList.add('expanded');
         }
 

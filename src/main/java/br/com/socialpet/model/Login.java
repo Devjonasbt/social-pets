@@ -29,7 +29,7 @@ public class Login extends HttpServlet {
             preparedStatement.setString(2, password);
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                credentialsValid = resultSet.next(); // Verifica se há pelo menos uma linha correspondente
+                credentialsValid = resultSet.next();
             }
 
         } catch (SQLException e) {
@@ -46,25 +46,20 @@ public class Login extends HttpServlet {
         if (checkCredentials(email, password)) {
             System.out.println("Credenciais válidas para Email: " + email + " e Senha: " + password);
 
-            // Obter dados do usuário
             DadosUsuario userData = getDadosUsuario(email, password);
 
-            // Armazenar dados do usuário no request
             request.setAttribute("userData", userData);
 
-            // Encaminhar para a página user.jsp
             request.getRequestDispatcher("pages/user.jsp").forward(request, response);
         } else {
             System.out.println("Credenciais inválidas para Email: " + email + " e Senha: " + password);
-            // Adicionar mensagem de erro (opcional)
+
             request.setAttribute("error", "Credenciais inválidas. Tente novamente.");
-            // Encaminhar de volta para a página de login (ou exibir a mensagem de erro na mesma página)
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }
 
     private DadosUsuario getDadosUsuario(String email, String password) {
-        // Modifique sua consulta SQL para recuperar os dados necessários
         String query = "SELECT id, nome, data, email, logradouro, cidade, cep, estado FROM cadastrar WHERE email = ? AND senha = ?";
         DadosUsuario userData = new DadosUsuario();
 
@@ -80,7 +75,6 @@ public class Login extends HttpServlet {
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 if (resultSet.next()) {
-                    // Preencher o objeto UserData com os dados do usuário
                     userData.setId(resultSet.getString("id"));
                     userData.setNome(resultSet.getString("nome"));
                     userData.setDataNascimento(resultSet.getString("data"));
