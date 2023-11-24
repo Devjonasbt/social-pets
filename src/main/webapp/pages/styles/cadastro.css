@@ -61,10 +61,13 @@ ul{
 }
 
 section{
+    
     width: 40%;
+    
     padding: 45px;
     margin: 0 auto;
     height: 80%;
+    
 }
 
 section form{
@@ -136,4 +139,9 @@ li.foto-nome{
 }
 
 
-
+@media (max-width:600px) {
+    section{
+        width: 80%;
+        
+    }
+}
